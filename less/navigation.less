@@ -4,19 +4,32 @@ header {
         display: block;
         font-family: @hed-font-stack;
         font-size: 4rem;
+        opacity: 0.9;
         padding: 1rem 0;
+        position: fixed;
         text-align: center;
+        top: 0;
         .undecorate;
-        width: 100%;
+        width: @max-container;
         // cascade of 'color' from .undecorate
         color: @header-font-color;
+        @media @min-break {
+            width: 100%;
+        }
     }
 }
 nav {
     background: @nav-bg;
     border-bottom: 1px solid @nav-border;
     display: flex;
+    opacity: 0.9;
     padding: 1rem 0;
+    position: fixed;
+    top: 60px;
+    width: @max-container;
+    @media @min-break {
+        width: 100%;
+    }
     div {
         margin: 0 auto;
         a {
