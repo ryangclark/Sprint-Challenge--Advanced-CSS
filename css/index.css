@@ -292,6 +292,7 @@ nav div a:hover {
 }
 .home .walk .walk-text .btn {
   background: #22283A;
+  border: 2px solid #22283A;
   border-radius: 5px;
   color: #F6F7F8;
   cursor: pointer;
@@ -299,6 +300,10 @@ nav div a:hover {
   padding: 8px 0;
   text-align: center;
   width: 100px;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
