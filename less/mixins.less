@@ -1,1 +1,15 @@
-// Mixins Here
+.undecorate() {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.width-main() {
+    display: block;
+    margin: 0 auto;
+    width: @content-width-desk;
+    @media @min-break {
+        width: @content-width-mobile;
+    }
+}

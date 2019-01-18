@@ -1,1 +1,36 @@
-// Navigation code here
+header {
+    img {
+        border-radius: 5px;
+    }
+    img, h2, p {
+        .width-main;
+    }
+    .logo {
+        background: @nav-bg;
+        display: block;
+        font-family: @hed-font-stack;
+        font-size: 4rem;
+        padding: 1rem 0;
+        text-align: center;
+        .undecorate;
+        width: 100%;
+        // cascade of 'color' from .undecorate
+        color: @header-font-color;
+    }
+}
+nav {
+    background: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    display: flex;
+    padding: 1rem 0;
+    div {
+        margin: 0 auto;
+        a {
+            color: @nav-font-color;
+            font-family: @body-font-stack;
+            font-size: 1.6rem;
+            padding: 1rem;
+            .undecorate;
+        }
+    }
+}
